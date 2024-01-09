@@ -1,6 +1,6 @@
 
 
-@extends('layouts.master')
+@extends('layouts.app')
 
 @section('title') Gerenciar substitutos @endsection
 

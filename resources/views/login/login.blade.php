@@ -1,4 +1,4 @@
-@extends('layouts.auth-master')
+@extends('layouts.Auth.app')
 
 @section('title') Angelus @endsection
 
@@ -10,7 +10,7 @@
                     <div class="card overflow-hidden">
                         <div class="card-body pt-0">
                             <h3 class="text-center mt-4">
-                                <a href="/" class="logo logo-admin"><img src="{{ URL::asset('/images/logo150px.png')}}" height="100" alt="logo"></a>
+                                <a href="/" class="logo logo-admin"><img src="{{URL::asset('/images/logo150px.png')}}" height="100" alt="logo"></a>
                             </h3>
                             <div class="p-3">
                                 <!-- <h4 class="text-muted font-size-18 mb-1 text-center">Welcome Back !</h4> -->
@@ -33,6 +33,7 @@
                                             <strong>{{ $message }}</strong>
                                         </span>
                                         @enderror
+                                        <br>
 
                                     </div>
                                     <div class="form-group">
